@@ -34,8 +34,7 @@ stanfordClassifier = '/Users/sabertooth07/Downloads/stanford-ner-2017-06-09/clas
 stanfordNerPath = '/Users/sabertooth07/Downloads/stanford-ner-2017-06-09/stanford-ner.jar'
 
 st = StanfordNERTagger(stanfordClassifier, stanfordNerPath, encoding='utf8')
-#result = st.tag("10/13/2017")
-result = st.tag(word_tokenize("France The date is October 13, 2017"))
-#result = st.tag("France October 13, 2017")
+#result = st.tag("10/24/1989")
+result = st.tag(word_tokenize("October 24, 1989"))
 print (result)
 """
